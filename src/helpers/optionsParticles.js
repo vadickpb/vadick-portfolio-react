@@ -10,7 +10,7 @@ export const optionsParticles = () => {
     interactivity: {
         events: {
             onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
             },
             onHover: {
@@ -31,10 +31,10 @@ export const optionsParticles = () => {
     },
     particles: {
         color: {
-            value: "#ffffff",
+            value: "#458588",
         },
         links: {
-            color: "#ffffff",
+            color: "#458588",
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -56,9 +56,9 @@ export const optionsParticles = () => {
         number: {
             density: {
                 enable: false,
-                area: 100,
+                area: 20,
             },
-            value: 80,
+            value: 50,
         },
         opacity: {
             value: 0.5,

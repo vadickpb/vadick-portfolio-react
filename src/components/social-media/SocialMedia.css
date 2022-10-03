@@ -1,0 +1,17 @@
+.social-media-container {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.social-link {
+  font-size: 3rem;
+  color: var(--subtitle-color);
+  transition: all 0.5s ease;
+}
+
+.social-link:hover {
+  color: var(--blue-color);
+}

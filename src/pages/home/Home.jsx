@@ -1,42 +1,39 @@
-import { useCallback } from "react"
-import Particles from "react-tsparticles"
-import { loadFull } from "tsparticles"
-import { optionsParticles } from "../../helpers/optionsParticles";
+import { startTransition } from 'react'
 import Typewriter from 'typewriter-effect'
+import NavBar from '../../ui/NavBar/NavBar'
+import Avatar from '../../assets/avatar-vadick.jpg'
+import './Home.css'
+import SocialMedia from '../../components/social-media/SocialMedia'
 
 const Home = () => {
-  const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
-    await loadFull(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-  }, []);
   return (
     <>
-      <h1>
-        <Typewriter
-          options={{
-            strings: [
-              'Soy Ingeniero de Sistemas.',
-              'Especializado en Desarrollo Web.'
-            ],
-            autoStart: true,
-            loop: true,
-            deleteSpeed: 10,
-            cursor: '<',
-            delay: 100,
-          }}
-        />
-        Hola, soy Vadick
-      </h1>
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={optionsParticles()}
-      />
+      <div className="home-container">
+        <div className="home-image-container">
+          <img className='home-image' src={Avatar} alt="" />
+        </div>
+
+        <h2 className="home-subtitle">software engineer</h2>
+        <h1 className="home-title">
+          <Typewriter
+            options={{
+              strings: [
+                'Hola, soy Vadick',
+                'Ingeniero de Sistemas',
+                '< React.js />'
+              ],
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 10,
+              cursor: '|',
+              delay: 90,
+            }}
+          />
+        </h1>
+        <SocialMedia />
+      </div>
+      <NavBar />
+
     </>
   )
 }
