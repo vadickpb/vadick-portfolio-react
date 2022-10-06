@@ -7,15 +7,15 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 3;
+  z-index: 10;
   animation: fadeInDown;
   animation-duration: 1s;
 }
 
 .home-image-container {
   display: inline-block;
-  height: 23rem;
-  width: 23rem;
+  height: 25rem;
+  width: 25rem;
   overflow: hidden;
   border-radius: 50%;
 

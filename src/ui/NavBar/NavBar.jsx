@@ -18,12 +18,16 @@ const NavBar = () => {
         to="about">
         <i class="fa-solid fa-user"></i>
       </NavLink>
-      <Link className='link' to="/portfolio">
+      <NavLink   
+        className={({ isActive }) => `link ${isActive ? 'active' : ''}`}   
+        to="/portfolio">
         <i class="fa-solid fa-briefcase"></i>
-      </Link>
-      <Link className='link' to="/contact">
+      </NavLink>
+      <NavLink  
+        className={({ isActive }) => `link ${isActive ? 'active' : ''}`}  
+        to="/contact">
         <i class="fa-solid fa-envelope"></i>
-      </Link>
+      </NavLink>
     </nav>
   )
 }

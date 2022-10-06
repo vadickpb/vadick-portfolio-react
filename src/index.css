@@ -153,3 +153,24 @@ select {
   margin: 0;
 }
 
+
+/* Buttons */
+
+.btn-primary {
+  font-size: 2rem;
+  margin-top: 5rem;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  border-radius: 5px;
+  color: var(--title-color);
+  background-color: var(--blue-color);
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  border: 1px solid var(--blue-color);
+  color: var(--blue-color);
+}
