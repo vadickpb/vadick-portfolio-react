@@ -1,0 +1,85 @@
+.portfolio-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  animation: fadeInDown;
+  animation-duration: 1s;
+  padding-block: 4rem;
+}
+
+.portfolio-title {
+  color: var(--title-color);
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.item-project-container {
+  width: 90%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-block: 4rem;
+}
+
+
+hr {
+  width: 80%;
+  height: 1px;
+  margin-block: 5rem;
+
+}
+
+.project-img {
+  width: 30rem;
+  height: auto;
+  /* overflow: hidden; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.project-img img {
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.project-info-container {
+  width: 40%;
+}
+
+.project-title {
+  color: var(--light-blue);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+}
+
+.project-description {
+  margin-block: 2rem;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  
+}
+
+.project-link {
+  font-size: 3rem;
+  margin: 1rem;
+  color: var(--light-blue);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.project-link:hover {
+  color: var(--blue-color);
+}
+

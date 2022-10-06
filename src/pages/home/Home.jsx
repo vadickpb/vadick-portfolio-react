@@ -19,7 +19,7 @@ const Home = () => {
             options={{
               strings: [
                 'Hola, soy Vadick',
-                'Ingeniero de Sistemas',
+                'Desarrollador Web',
                 '< React.js />'
               ],
               autoStart: true,

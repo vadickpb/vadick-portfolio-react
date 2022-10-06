@@ -1,11 +1,17 @@
 .nav-container {
-  position: absolute;
+  position: fixed;
   top: 30%;
   left: 2%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
-  z-index: 3;
+  z-index: 100;
+  /* filter: blur(6px); */
+  padding: 1rem;
+  border-radius: 5px;
+  backdrop-filter: blur(6px);
 }
 
 .nav-link {
@@ -20,7 +26,7 @@
 
 .link {
   font-size: 3rem;
-  margin-right: 3rem;
+  /* margin-right: 3rem; */
   transition: all 0.5s ease;
   border: 1px solid var(--subtitle-color);
   color: var(--subtitle-color);
@@ -37,16 +43,30 @@
 } */
 
 .link:hover {
-  color: #458588;
-  border: 1px solid #458588;
+  background-color: #458588;
+  color: var(--title-color);
+  /* border: 1px solid #458588; */
 }
 
 .active {
-  color: #458588;
-  border: 1px solid #458588;
+  background-color: #458588;
+  color: var(--title-color);
 }
 
 /* .nav-link:hover{
   border: 1px solid green;
   color: green;
 } */
+
+@media (max-width: 700px) {
+  .nav-container {
+    flex-direction: row;
+    top: 90%;
+    /* bottom: 5%; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+
+  }
+}

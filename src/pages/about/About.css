@@ -2,18 +2,120 @@
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-
-  padding: 5rem;
+  /* justify-content: center; */
+  /* padding-inlineabout: 15rem; */
+  position: relative;
+  z-index: 10;
+  padding-top: 5rem;
+  padding-inline: 6rem;
   animation: fadeInDown;
   animation-duration: 1s;
-  
+
 }
 
 .about-title {
   font-size: 3rem;
-  color: var(--subtitle-color);
+  color: var(--title-color);
   text-transform: uppercase;
   font-weight: 200;
   letter-spacing: 10px;
+  text-align: center;
+  /* margin-bottom: 7rem; */
+}
+
+.about-title span {
+  color: var(--light-blue);
+}
+.aboutme-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  /* justify-content: space-around; */
+}
+
+.about-info-container {
+  width: 30%;
+}
+
+.text-about {
+  width: 100%;
+  color: var(--title-color);
+  font-size: 1.6rem;
+  /* margin-top: 4rem; */
+}
+
+.btn-primary {
+  font-size: 2rem;
+  margin-top: 5rem;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  border-radius: 5px;
+  color: var(--title-color);
+  background-color: var(--blue-color);
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  border: 1px solid var(--blue-color);
+  color: var(--blue-color);
+}
+
+.arrow {
+  margin-left: 1rem;
+  /* color: black; */
+  animation: pulse 1.5s infinite;
+
+}
+
+.img-about {
+  width: 30rem;
+  height: 40rem;
+  background-size: cover;
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+.img-about img {
+  width: 100%;
+  height: auto;
+}
+
+/* Skills section */
+
+
+
+/* Responsive */
+@media (max-width: 700px) {
+  .aboutme-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: auto; */
+  }
+  .about-info-container {
+    width: 90%;
+  }
+
+  .text-about {
+    margin-top: 2rem;
+  }
+  .img-about {
+    width: 80%;
+    height: 100%;
+    margin-bottom: 10rem;
+  }
+
+  .img-about img {
+    background-size: cover;
+    object-fit: cover;
+  }
 }

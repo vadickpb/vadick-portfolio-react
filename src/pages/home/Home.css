@@ -8,25 +8,11 @@
   align-items: center;
   position: relative;
   z-index: 3;
-
-
-  
+  animation: fadeInDown;
+  animation-duration: 1s;
 }
 
-
-/* #tsparticles {
-  position: absolute;
-  left: calc(50% - 100px);
-  top: calc(50% - 100px);
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  height: 200px;
-  z-index: 10;
-} */
-
 .home-image-container {
-
   display: inline-block;
   height: 23rem;
   width: 23rem;
@@ -91,3 +77,10 @@
       box-shadow: 0 0 0 0 rgba(204,169,44, 0);
   }
 }
+
+@media (max-width: 700px) {
+  .home-title {
+    font-size: 3rem;
+  }
+}
+
