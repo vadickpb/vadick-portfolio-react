@@ -23,6 +23,8 @@
 
 .form-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 5rem;
 }
 
@@ -39,6 +41,7 @@
   padding: 0.6rem 1rem;
   background-color: var(--text-color);
   color: black;
+  width: 100%;
 }
 
 .btn-primary {
@@ -47,4 +50,15 @@
   border: none;
 }
 
+
+@media (max-width: 700px){
+  .form-container {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .form-group-info {
+    width: 100%;
+  }
+}
 

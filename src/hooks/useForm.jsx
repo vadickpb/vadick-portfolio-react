@@ -7,17 +7,21 @@ const useForm = (initialForm = {}) => {
 
   const onInputChange = ({target}) => {
     const {name, value} = target
-
     setFormValue({
       ...formValue,
       [name]: value
     })
   }
+
+  const onResetForm = () => {
+    setFormValue(initialForm)
+  }
   
   return {
     ...formValue,
     formValue,
-    onInputChange
+    onInputChange,
+    onResetForm
   } 
 }
 

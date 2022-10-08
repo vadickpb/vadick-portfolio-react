@@ -9,12 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.7.0",
     "animate.css": "^4.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.1",
     "react-skills": "^1.27.0",
     "react-tsparticles": "^2.3.2",
+    "sweetalert2": "^11.4.38",
     "tsparticles": "^2.3.2",
     "typewriter-effect": "^2.19.0"
   },
