@@ -16,17 +16,17 @@ const NavBar = () => {
       <NavLink 
         className={({ isActive }) => `link ${isActive ? 'active' : ''}`}  
         to="about">
-        <i class="fa-solid fa-user"></i>
+        <i className="fa-solid fa-user"></i>
       </NavLink>
       <NavLink   
         className={({ isActive }) => `link ${isActive ? 'active' : ''}`}   
         to="/portfolio">
-        <i class="fa-solid fa-briefcase"></i>
+        <i className="fa-solid fa-briefcase"></i>
       </NavLink>
       <NavLink  
         className={({ isActive }) => `link ${isActive ? 'active' : ''}`}  
         to="/contact">
-        <i class="fa-solid fa-envelope"></i>
+        <i className="fa-solid fa-envelope"></i>
       </NavLink>
     </nav>
   )

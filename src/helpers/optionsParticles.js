@@ -58,7 +58,7 @@ export const optionsParticles = () => {
                 enable: false,
                 area: 20,
             },
-            value: 50,
+            value: 30,
         },
         opacity: {
             value: 0.5,

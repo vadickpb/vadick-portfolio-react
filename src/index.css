@@ -160,8 +160,9 @@ select {
   font-size: 2rem;
   margin-top: 5rem;
   padding-inline: 3rem;
-  padding-block: 1rem;
+  padding-block: 0.7rem;
   border-radius: 5px;
+  border: 1ps solid transparent;
   color: var(--title-color);
   background-color: var(--blue-color);
   cursor: pointer;

@@ -20,10 +20,10 @@ const Portfolio = () => {
           </div>
           <div className="project-info-buttons">
             <a href="" className="project-link">
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
             <a href="" className="project-link">
-              <i class="fa-solid fa-eye"></i>
+              <i className="fa-solid fa-eye"></i>
             </a>
           </div>
         </div>
@@ -43,10 +43,10 @@ const Portfolio = () => {
           </div>
           <div className="project-info-buttons">
             <a href="" className="project-link">
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
             <a href="" className="project-link">
-              <i class="fa-solid fa-eye"></i>
+              <i className="fa-solid fa-eye"></i>
             </a>
           </div>
         </div>
