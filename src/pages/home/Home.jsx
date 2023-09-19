@@ -20,7 +20,10 @@ const Home = () => {
               strings: [
                 'Hola, soy Vadick',
                 'Desarrollador Web',
-                '< React.js />'
+                '< React.js />',
+                '<?php ?>',
+                '.SQL',
+                'node.js'
               ],
               autoStart: true,
               loop: true,
